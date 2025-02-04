@@ -1,41 +1,14 @@
-# My Go API
+## Description
 
-This project is a basic API built with Go. It provides endpoints to manage items, allowing users to retrieve and create items.
-
-## Project Structure
-
-```
-my-go-api
-├── cmd
-│   └── main.go          # Entry point of the application
-├── pkg
-│   ├── handlers
-│   │   └── handlers.go  # HTTP request handlers
-│   ├── models
-│   │   └── models.go    # Data structures
-│   └── routes
-│       └── routes.go    # API routes setup
-├── go.mod                # Module definition
-└── README.md             # Project documentation
-```
-
-## Getting Started
-
-### Prerequisites
-
-- Go 1.16 or later
+Here is a simple API I created based on your specifications. I just followed the description given in the README. I have also included some curl commands that I used for testing. You'll also notice that I have simplified the IDs to just be an incrementing integer, I used a UUID at first but it's just easier to test using an integer. You can revert that change if you'd like. I have also left in my comments so you can see my thought process. 
 
 ### Installation
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/my-go-api.git
+   git clone https://github.com/Kcin4/fetch-api.git
    ```
-2. Navigate to the project directory:
-   ```
-   cd my-go-api
-   ```
-3. Install dependencies:
+2. Install dependencies:
    ```
    go mod tidy
    ```
@@ -49,11 +22,4 @@ go run cmd/main.go
 
 The API will start on `http://localhost:8080`.
 
-### API Endpoints
-
-- `GET /items` - Retrieve all items
-- `POST /items` - Create a new item
-
-## Contributing
-
-Feel free to submit issues or pull requests for improvements or bug fixes.
+Just send your requests through `/http://localhost:8080/receipts/process` and `/http://localhost:8080/receipts/{id}/points` by replacing `{id}` with the ID you'd like to get.
